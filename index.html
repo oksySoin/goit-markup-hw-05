@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- styles -->
     <link rel="stylesheet" href="./css/styles.css">
     <title>WebStudio</title>
   </head>
@@ -18,7 +23,7 @@
         <nav class="page-nav">
           <a class="logo link" href="./index.html">Web<span class="header-logo">Studio</span></a>
           <ul class="menu list">
-            <li class="menu-item"><a class="menu-link link" href="./index.html">Studio</a></li>
+            <li class="menu-item"><a class="menu-link current link" href="./index.html">Studio</a></li>
             <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
             <li class="menu-item"><a class="menu-link link" href="">Contacts</a></li>
           </ul>
@@ -37,7 +42,7 @@
       <section class="hero">
         <div class="container hero-box">          
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="btn-hero" type="button">Order Service</button>
+          <button class="btn-hero" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- benefits-->
@@ -550,5 +555,20 @@
         </div>        
       </div>          
     </footer>
+
+      <!-- modal window -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-svg" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -190,6 +190,7 @@ STUDiO
   max-width: 1440px;
   padding: 188px 0;
   margin: auto;
+  margin-top: 72px;
 
   background-size: cover;
   background-position: center;
@@ -354,8 +355,8 @@ STUDiO
   color: var(--color-light-slate);
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
-  transition: background-color var(--transition-dur-and-func),
-    color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func);
 }
 .customers-companies-link:hover,
 .customers-companies-link:focus{
@@ -475,6 +476,7 @@ STUDiO
 PORTFOLIO
 *****/
 .section-portfolio{
+  margin-top: 72px;
   padding: 96px 0 120px;
 }
 .filter{
@@ -523,12 +525,7 @@ PORTFOLIO
   transition: border var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func);
 }
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .project-link:hover .prj-overlay,
 .project-link:focus .prj-overlay{
   transform: translate(0, 0);
@@ -537,6 +534,12 @@ PORTFOLIO
 
 .project-link{
   display: block;
+}
+.project-link:hover,
+.project-link:focus{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .prj-crd-subtitle {
